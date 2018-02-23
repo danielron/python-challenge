@@ -1,7 +1,7 @@
 import csv
 import os
 
-# This is the PyBank option
+# This is the PyBank option final
 
 def budget(inputfile, outputfile):
     if not os.path.exists(inputfile):
@@ -70,8 +70,8 @@ dec_mon)
         csvwriter.writerow(["Total months:" + str(num_months)])
         csvwriter.writerow(["Total revenue:" + str(total)])
         csvwriter.writerow(["Average revenue change:" + str(avg_rev_change)])
-        csvwriter.writerow(["Greatest Increase:" + str(greatestincrease) + "and month is " + inc_mon])
-        csvwriter.writerow(["Greatest Decrease:" + str(greatestdecrease) + "and month is " + dec_mon])
+        csvwriter.writerow(["Greatest Increase:" + str(greatestincrease) + " and month is " + inc_mon])
+        csvwriter.writerow(["Greatest Decrease:" + str(greatestdecrease) + " and month is " + dec_mon])
         csvwriter.writerow(["-------------------"])
 
 # Calling budget function with data files as inputs
